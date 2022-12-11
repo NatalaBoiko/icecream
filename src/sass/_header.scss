@@ -1,0 +1,29 @@
+header {
+  padding: 6px 20px;
+  background-color: var(--main-section-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger__menu {
+  width: 20px;
+  height: 12px;
+}
+
+.burger__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+.burger__button:focus,
+.burger__button:hover {
+  scale: 110%;
+}
+
+@media screen and (min-width: $tablet) {
+  .burger__menu {
+    display: none;
+  }
+}
