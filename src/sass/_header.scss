@@ -1,6 +1,7 @@
 header {
-  padding: 6px 20px;
-  background-color: var(--main-section-color);
+  width: 100vw;
+  padding: 6px var(--secton_side_padding);
+  background-color: var(--main-section-bg);
   display: flex;
   align-items: center;
   justify-content: space-between;

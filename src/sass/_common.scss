@@ -1,1 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section {
+  padding-left: var(--secton_side_padding);
+  padding-right: var(--secton_side_padding);
+  margin: 0;
+  width: 100vw;
+}
+
+img {
+  display: block;
+}

@@ -1,0 +1,19 @@
+.images__section {
+  // background-color: var(--third-section-bg);
+  background-image: linear-gradient(
+    to bottom,
+    var(--third-section-bg) 40%,
+    var(--second-section-bg) 40%,
+    var(--second-section-bg) 50%
+  );
+
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid;
+  // position: relative;
+  // height: fit-content;
+}
+
+.icecream__images {
+  position: relative;
+}
