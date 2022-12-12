@@ -9,6 +9,7 @@ header {
 .burger__menu {
   width: 20px;
   height: 12px;
+  fill: black;
 }
 
 .burger__button {
@@ -24,7 +25,7 @@ header {
 }
 
 @media screen and (min-width: $tablet) {
-  .burger__menu {
+  .burger__button {
     display: none;
   }
 }
