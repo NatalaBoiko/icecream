@@ -5,11 +5,46 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  content-visibility: auto;
 }
+
+.heade__logo {
+  animation-name: heade__logo;
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes heade__logo {
+  0% {
+    opacity: 0;
+    // top: 500px;
+    margin-left: -300px;
+  }
+  100% {
+    opacity: 1;
+    // top: 30px;
+    margin-left: 0;
+  }
+}
+
 .burger__menu {
   width: 20px;
   height: 12px;
-  fill: black;
+  // fill: black;
+
+  animation-name: burger__menu;
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes burger__menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .burger__button {
@@ -22,6 +57,7 @@ header {
 .burger__button:focus,
 .burger__button:hover {
   scale: 110%;
+  rotate: 90deg;
 }
 
 @media screen and (min-width: $tablet) {

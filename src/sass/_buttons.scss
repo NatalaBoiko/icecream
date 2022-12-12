@@ -1,0 +1,76 @@
+.btns {
+  display: flex;
+  column-gap: 8px;
+}
+
+.btn {
+  background-color: var(--font-color-one);
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.btn a {
+  color: var(--font-color-two);
+  font-family: DM Sans;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  // &:hover,
+  // &:focus {
+  //   color: aliceblue;
+  // }
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 2px 2px 1px #0000003d;
+  background-color: var(--font-color-two);
+  & a {
+    color: aliceblue;
+  }
+}
+
+.hero__btns {
+  position: absolute;
+  bottom: 160;
+  // opacity: 0;
+
+  // animation-name: hero__btns;
+  // animation-duration: var(--animationDuration);
+  // animation-timing-function: linear;
+  // animation-fill-mode: forwards;
+  // animation-delay: 3s;
+}
+.hero__btn:nth-child(1) {
+  opacity: 0;
+  animation-name: hero__btns;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+
+.hero__btn:nth-child(2) {
+  opacity: 0;
+  animation-name: hero__btns;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
+@keyframes hero__btns {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  80% {
+    opacity: 1;
+    scale: 1.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

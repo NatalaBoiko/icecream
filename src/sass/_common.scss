@@ -1,17 +1,41 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+*,
+::before,
+::after {
+  transition-duration: var(--transitionDuration);
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 section {
   padding-left: var(--secton_side_padding);
   padding-right: var(--secton_side_padding);
   margin: 0;
   width: 100vw;
+  content-visibility: auto;
 }
 
 img {
   display: block;
+}
+h1 {
+  display: block;
+  margin: 0;
+}
+
+ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  display: block;
+  text-decoration: none;
 }

@@ -1,14 +1,71 @@
 .hero__section {
+  min-height: 440px;
   background-color: var(--main-section-bg);
   background-image: url(../images/hero-elipse-big.png);
   background-repeat: no-repeat;
   background-size: 346px;
-  background-position: 36px 11px;
+  background-position: 36px 21px;
+  position: relative;
+}
+.hero__title {
+  // display: block;
+  // flex-direction: column;
+  font-family: Titan one;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  color: var(--font-color-one);
+  text-shadow: 3px 3px 1px #0000003d;
+
+  position: absolute;
+  top: 131;
+  left: -300px;
+  z-index: 100;
+
+  animation-name: hero__title;
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.hero__title span {
+  font-size: 48px;
+  color: var(--font-color-two);
+  z-index: 10;
+}
+@keyframes hero__title {
+  0% {
+    opacity: 0;
+    // top: 500px;
+    left: -300px;
+  }
+  100% {
+    opacity: 1;
+    // top: 30px;
+    left: 20;
+  }
 }
 
 .hero__icecream {
-  // z-index: 2;
-  width: 171px;
-  margin-top: 30px;
-  margin-left: 90px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  animation-name: icecream;
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+@keyframes icecream {
+  0% {
+    width: 11px;
+    left: 300px;
+  }
+  100% {
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    width: 171px;
+    left: 110px;
+  }
 }
