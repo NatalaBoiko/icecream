@@ -16,15 +16,11 @@
   font-weight: 400;
   line-height: 1.25;
   text-align: center;
-  // &:hover,
-  // &:focus {
-  //   color: aliceblue;
-  // }
 }
 
 .btn:hover,
 .btn:focus {
-  box-shadow: 2px 2px 1px #0000003d;
+  box-shadow: var(--btnShadow);
   background-color: var(--font-color-two);
   & a {
     color: aliceblue;
@@ -34,13 +30,6 @@
 .hero__btns {
   position: absolute;
   bottom: 160;
-  // opacity: 0;
-
-  // animation-name: hero__btns;
-  // animation-duration: var(--animationDuration);
-  // animation-timing-function: linear;
-  // animation-fill-mode: forwards;
-  // animation-delay: 3s;
 }
 .hero__btn:nth-child(1) {
   opacity: 0;

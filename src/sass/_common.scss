@@ -5,6 +5,7 @@
 ::after {
   transition-duration: var(--transitionDuration);
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
