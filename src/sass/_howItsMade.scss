@@ -1,3 +1,39 @@
 .how__section {
   background-color: var(--third-section-bg);
 }
+.how__section img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+.how__description {
+  width: 220px;
+  margin-bottom: 36px;
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--font-color-three);
+}
+.bold {
+  color: var(--font-color-four);
+  font-weight: 900;
+}
+
+.how__btn {
+  width: 176px;
+  height: 44px;
+  position: relative;
+  // overflow: hidden;
+}
+
+.how__btn-icon {
+  width: 100px;
+
+  fill: var(--font-color-two);
+  position: absolute;
+  top: -54px;
+  right: 32px;
+}
