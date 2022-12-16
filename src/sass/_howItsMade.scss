@@ -3,7 +3,8 @@
   background-image: url(../images/about-bg-milk-mob.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: 0px 740px;
+  // background-position: 0px 740px;
+  background-position: bottom 857px left 50%;
 }
 .how__section img {
   margin-left: auto;
@@ -21,13 +22,11 @@
   text-align: left;
   color: var(--font-color-three);
 }
-// .how__description:nth-child(1) {
-//   color: var(--font-color-four);
-//   font-weight: 900;
-// }
+
 .how__description:nth-child(2) {
   margin-bottom: 20px;
 }
+
 .bold {
   color: var(--font-color-four);
   font-weight: 900;

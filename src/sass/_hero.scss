@@ -4,10 +4,23 @@
   background-image: url(../images/hero-elipse-big.png);
   background-repeat: no-repeat;
   background-size: 346px;
-  background-position: 36px 21px;
+  // background-position: 36px 21px;
   position: relative;
   align-items: flex-start;
+  animation-name: bg__img;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
+@keyframes bg__img {
+  0% {
+    background-position: 2500px 21px;
+  }
+  100% {
+    background-position: 36px 21px;
+  }
+}
+
 .hero__title {
   // display: block;
   // flex-direction: column;
