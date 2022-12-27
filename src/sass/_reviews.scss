@@ -1,8 +1,13 @@
 .reviews__section {
-  height: 500px;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--second-section-bg);
+}
+
+.reviews__section h2 {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .reviews__list {
@@ -25,7 +30,16 @@
   padding-bottom: 26px;
   padding-left: 62px;
   background-color: var(--review-bg);
+  // position: relative;
 }
+
+.reviews__list-item div::after {
+  content: url('../images/customer-reviews-ellipse.png');
+  position: absolute;
+  margin-top: 40px;
+  left: 45%;
+}
+
 .reviews__list p {
   text-align: center;
   background: repeating-linear-gradient(
@@ -44,11 +58,10 @@
 }
 
 .reviews__list p::before {
-  content: '';
+  content: url('../images/“.png');
   position: absolute;
-  top: -15px;
-  left: 3px;
-  background-image: url(../images/“.png);
+  margin-left: -36px;
+  margin-top: -15px;
   background-repeat: no-repeat;
   width: 54px;
   height: 40px;
