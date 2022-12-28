@@ -74,3 +74,9 @@ a {
   // margin-top: 121px;
   margin-bottom: 15px;
 }
+
+.hidden__title {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}

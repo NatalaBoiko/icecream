@@ -1,14 +1,14 @@
 .reviews__section {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   background-color: var(--second-section-bg);
 }
 
-.reviews__section h2 {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
+// .reviews__section h2 {
+//   position: absolute;
+//   opacity: 0;
+//   visibility: hidden;
+// }
 
 .reviews__list {
   display: flex;
@@ -40,7 +40,7 @@
   left: 45%;
 }
 
-.reviews__list p {
+.reviews__descr {
   text-align: center;
   background: repeating-linear-gradient(
     var(--review-bg-clear),
@@ -57,7 +57,7 @@
   z-index: 0;
 }
 
-.reviews__list p::before {
+.reviews__descr::before {
   content: url('../images/“.png');
   position: absolute;
   margin-left: -36px;
@@ -67,3 +67,15 @@
   height: 40px;
   z-index: -1;
 }
+
+.reviews__name {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 52px;
+}
+// .is__active {
+// }
