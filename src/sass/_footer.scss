@@ -105,10 +105,7 @@
   &:focus,
   &:hover {
     a {
-      transform: scale(1.1);
-      margin-left: 5px;
       color: var(--second-section-bg);
-      text-align: center;
       text-shadow: 0 0 6px var(--second-section-bg),
         0 0 3px var(--second-section-bg), 0 0 5px var(--font-color-two);
     }
