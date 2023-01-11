@@ -47,8 +47,13 @@
 
 .footer__social svg {
   fill: var(--font-color-five);
+  border-radius: 50%;
   width: 32px;
   height: 32px;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 3px var(--font-color-three), 0px 0px 1px #ffffff;
+  }
 }
 
 .footer__contact {
@@ -72,6 +77,14 @@
     line-height: 24px;
     color: var(--font-color-two);
   }
+  &:hover,
+  &:focus {
+    a {
+      font-family: DM Sans;
+      font-weight: bold;
+      text-shadow: var(--btnShadow);
+    }
+  }
 }
 
 .all__rights {
@@ -86,6 +99,20 @@
   color: var(--font-color-three);
   padding: 25px;
   position: relative;
+  & a {
+    color: var(--font-color-three);
+  }
+  &:focus,
+  &:hover {
+    a {
+      transform: scale(1.1);
+      margin-left: 5px;
+      color: var(--second-section-bg);
+      text-align: center;
+      text-shadow: 0 0 6px var(--second-section-bg),
+        0 0 3px var(--second-section-bg), 0 0 5px var(--font-color-two);
+    }
+  }
 }
 
 .all__rights::before {
@@ -96,4 +123,10 @@
   position: absolute;
   bottom: 92px;
   left: -20px;
+}
+
+.all__p {
+  display: flex;
+  justify-content: center;
+  column-gap: 3px;
 }
