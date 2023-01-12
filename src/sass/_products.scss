@@ -87,12 +87,9 @@
 }
 
 .product__btn:hover {
-  transform: scale(1.1);
-  box-shadow: var(--productBtnShadow);
   background-color: var(--font-color-one);
   & .product__btn-icon {
-    fill: aliceblue;
-    box-shadow: none;
+    fill: var(--font-color-one);
   }
 }
 

@@ -4,12 +4,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom 857px left 50%;
+  & img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+  & img:hover {
+    transform: scale(1.1);
+  }
 }
-.how__section img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 46px;
-}
+
 .how__description {
   width: 220px;
   margin-bottom: 36px;

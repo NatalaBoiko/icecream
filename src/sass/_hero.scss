@@ -83,3 +83,37 @@
     left: 110px;
   }
 }
+
+.hero__btns {
+  position: absolute;
+  bottom: 160;
+}
+.hero__btn {
+  opacity: 0;
+  animation-name: hero__btns;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.hero__btn:nth-child(1) {
+  animation-delay: 3.5s;
+}
+
+.hero__btn:nth-child(2) {
+  animation-delay: 4s;
+}
+
+@keyframes hero__btns {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  80% {
+    opacity: 1;
+    scale: 1.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

@@ -4,8 +4,11 @@
 ::before,
 ::after {
   transition-duration: var(--transitionDuration);
-  scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
