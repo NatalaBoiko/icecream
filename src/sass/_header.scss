@@ -8,7 +8,7 @@ header {
   content-visibility: auto;
 }
 
-.heade__logo {
+.header__logo {
   animation-name: heade__logo;
   animation-duration: var(--animationDuration);
   animation-timing-function: linear;
@@ -25,6 +25,11 @@ header {
     // top: 30px;
     margin-left: 0;
   }
+}
+
+.header__btns {
+  display: flex;
+  column-gap: 30px;
 }
 
 .burger__menu {
@@ -52,16 +57,43 @@ header {
   background-color: transparent;
   cursor: pointer;
   transition: 1000ms;
-}
 
-.burger__button:focus,
-.burger__button:hover {
-  scale: 110%;
-  rotate: 90deg;
+  &:focus,
+  &:hover {
+    scale: 110%;
+    rotate: 90deg;
+  }
 }
 
 @media screen and (min-width: $tablet) {
   .burger__button {
     display: none;
+  }
+}
+
+.header__btn {
+  width: 160px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+
+  & svg {
+    width: 10px;
+    height: 10px;
+    stroke: var(--font-color-two);
+  }
+
+  &:focus,
+  &:hover {
+    & svg {
+      stroke: var(--font-color-one);
+    }
   }
 }

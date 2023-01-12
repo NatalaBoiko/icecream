@@ -5,21 +5,23 @@
 
 .btn {
   background-color: var(--font-color-one);
-  padding: 8px;
   border-radius: 20px;
   border: none;
   color: var(--font-color-two);
   overflow: hidden;
   cursor: pointer;
+
+  font-family: DM Sans;
+  text-align: center;
 }
 
 .btn a {
   color: var(--font-color-two);
-  font-family: DM Sans;
+
   font-size: 8px;
   font-weight: 400;
-  line-height: 1.25;
-  text-align: center;
+  line-height: 10px;
+  letter-spacing: 0em;
 }
 
 .btn:hover,
@@ -27,11 +29,13 @@
   box-shadow: var(--btnShadow);
   background-color: var(--font-color-two);
   transform: scale(1.1);
+  color: var(--font-color-one);
+
   & a {
     color: var(--font-color-one);
   }
 
-  & {
-    color: var(--font-color-one);
+  & svg {
+    fill: var(--font-color-one);
   }
 }

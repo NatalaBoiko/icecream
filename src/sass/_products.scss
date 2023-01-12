@@ -88,9 +88,6 @@
 
 .product__btn:hover {
   background-color: var(--font-color-one);
-  & .product__btn-icon {
-    fill: var(--font-color-one);
-  }
 }
 
 .product__name {
