@@ -2,6 +2,9 @@
 @import './variables';
 
 @import './header.scss';
+@import '../sass/tablet/header';
+@import '../sass/desktop/header';
+
 @import './hero';
 @import './products';
 @import './howItsMade';

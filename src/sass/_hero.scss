@@ -1,5 +1,6 @@
 .hero__section {
-  min-height: 440px;
+  padding-top: 182px;
+  min-height: 500px;
   background-color: var(--main-section-bg);
   background-image: url(../images/hero-elipse-big.png);
   background-repeat: no-repeat;
@@ -14,10 +15,10 @@
 }
 @keyframes bg__img {
   0% {
-    background-position: 2500px 21px;
+    background-position: 2500px 83px;
   }
   100% {
-    background-position: 36px 21px;
+    background-position: 36px 83px;
   }
 }
 

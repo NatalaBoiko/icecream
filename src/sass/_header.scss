@@ -1,11 +1,13 @@
 header {
   width: 100vw;
   padding: 6px var(--secton_side_padding);
-  background-color: var(--main-section-bg);
+  background-color: var(--headerBg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  content-visibility: auto;
+  // content-visibility: auto;
+  position: fixed;
+  z-index: 5;
 }
 
 .header__logo {
@@ -27,29 +29,23 @@ header {
   }
 }
 
+.header__nav {
+  display: none;
+  column-gap: 35px;
+
+  &-item a {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: var(--font-color-one);
+  }
+}
+
 .header__btns {
   display: flex;
   column-gap: 30px;
-}
-
-.burger__menu {
-  width: 20px;
-  height: 12px;
-  // fill: black;
-
-  animation-name: burger__menu;
-  animation-duration: var(--animationDuration);
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes burger__menu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .burger__button {
@@ -65,10 +61,9 @@ header {
   }
 }
 
-@media screen and (min-width: $tablet) {
-  .burger__button {
-    display: none;
-  }
+.burger__menu {
+  width: 20px;
+  height: 12px;
 }
 
 .header__btn {
@@ -84,6 +79,8 @@ header {
   line-height: 21px;
   letter-spacing: 0em;
 
+  opacity: 0;
+
   & svg {
     width: 10px;
     height: 10px;
@@ -95,5 +92,34 @@ header {
     & svg {
       stroke: var(--font-color-one);
     }
+  }
+}
+
+.header__nav,
+.burger__menu,
+.header__btn {
+  animation-name: burger__menu;
+  animation-duration: var(--animationDuration);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+// .header__btn {
+//   animation-delay: 4.5s;
+// }
+
+@keyframes burger__menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// adaptive layout
+@media screen and (max-width: $mobile) {
+  .header__btn {
+    display: none;
   }
 }
