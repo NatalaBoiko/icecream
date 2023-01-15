@@ -1,6 +1,6 @@
 @media screen and (min-width: $desktop) {
   header {
-    padding: 37px var(--secton_desktop_padding);
+    padding: 37px var(--secton_tablet_padding) 10px;
   }
 
   .header__nav {

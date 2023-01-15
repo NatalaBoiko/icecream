@@ -23,18 +23,13 @@
 }
 
 .hero__title {
-  // display: block;
-  // flex-direction: column;
-  font-family: Titan one;
-  font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
+  text-align: left;
   color: var(--font-color-one);
   text-shadow: 3px 3px 1px #0000003d;
+  margin-bottom: 19px;
 
-  position: absolute;
-  top: 193;
-  left: -300px;
   z-index: 100;
 
   animation-name: hero__title;
@@ -42,12 +37,14 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 2s;
+
+  & span {
+    font-size: 48px;
+    color: var(--font-color-two);
+    z-index: 10;
+  }
 }
-.hero__title span {
-  font-size: 48px;
-  color: var(--font-color-two);
-  z-index: 10;
-}
+
 @keyframes hero__title {
   0% {
     opacity: 0;
@@ -74,21 +71,17 @@
 @keyframes icecream {
   0% {
     width: 11px;
-    left: 300px;
+    right: 132px;
   }
   100% {
     position: absolute;
     bottom: 0;
     opacity: 1;
     width: 171px;
-    left: 110px;
+    right: 32px;
   }
 }
 
-.hero__btns {
-  position: absolute;
-  bottom: 160;
-}
 .hero__btn {
   padding: 9px 13px;
   opacity: 0;
@@ -96,6 +89,7 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-name: hero__btns;
+  z-index: 100;
 }
 .hero__btn:nth-child(1) {
   animation-delay: 3.5s;

@@ -1,9 +1,8 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $tablet) {
   .hero__section {
-    padding-top: 31px;
+    padding-top: 102px;
     min-height: 400px;
     background-size: 324px;
-    // animation-duration: 3s;
   }
   @keyframes bg__img {
     0% {
@@ -11,6 +10,31 @@
     }
     100% {
       background-position: bottom 46px right 137px;
+    }
+  }
+
+  .hero__title {
+    font-size: 22px;
+    & span {
+      font-size: 34px;
+    }
+  }
+
+  // .hero__icecream {
+  // }
+  @keyframes icecream {
+    0% {
+      width: 11px;
+      // left: 300px;
+      right: 132px;
+    }
+    100% {
+      position: absolute;
+      bottom: 0;
+      opacity: 1;
+      width: 143px;
+      // left: 110px;
+      right: 247px;
     }
   }
 }

@@ -24,7 +24,7 @@ section {
   padding-bottom: 100px;
   margin: 0;
   width: 100vw;
-  content-visibility: auto;
+  // content-visibility: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,6 @@ a {
   line-height: 1.17;
   text-align: center;
   color: var(--main-section-bg);
-  // margin-top: 121px;
   margin-bottom: 15px;
 }
 
