@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+  .hero__section {
+    padding-top: 31px;
+    min-height: 400px;
+    background-size: 324px;
+    // animation-duration: 3s;
+  }
+  @keyframes bg__img {
+    0% {
+      background-position: bottom 46px right -325px;
+    }
+    100% {
+      background-position: bottom 46px right 137px;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   background-image: url(../images/hero-elipse-big.png);
   background-repeat: no-repeat;
   background-size: 346px;
-  // background-position: 36px 21px;
+
   position: relative;
   align-items: flex-start;
   animation-name: bg__img;
@@ -15,10 +15,10 @@
 }
 @keyframes bg__img {
   0% {
-    background-position: 2500px 83px;
+    background-position: bottom 75px right -347px;
   }
   100% {
-    background-position: 36px 83px;
+    background-position: bottom 75px right -62px;
   }
 }
 
@@ -33,7 +33,7 @@
   text-shadow: 3px 3px 1px #0000003d;
 
   position: absolute;
-  top: 131;
+  top: 193;
   left: -300px;
   z-index: 100;
 

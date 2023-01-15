@@ -1,4 +1,7 @@
 @import './common';
+@import './tablet/common';
+@import './desktop/common';
+
 @import './variables';
 
 @import './header.scss';
@@ -6,6 +9,8 @@
 @import '../sass/desktop/header';
 
 @import './hero';
+@import './tablet/hero';
+
 @import './products';
 @import './howItsMade';
 @import './gallery';
