@@ -5,6 +5,7 @@
   background-image: url(../images/hero-elipse-big.png);
   background-repeat: no-repeat;
   background-size: 346px;
+  overflow: hidden;
 
   position: relative;
   align-items: flex-start;
@@ -30,7 +31,7 @@
   text-shadow: 3px 3px 1px #0000003d;
   margin-bottom: 19px;
 
-  z-index: 100;
+  // z-index: 100;
 
   animation-name: hero__title;
   animation-duration: var(--animationDuration);
@@ -42,6 +43,10 @@
     font-size: 48px;
     color: var(--font-color-two);
     z-index: 10;
+  }
+
+  &-wrapper {
+    z-index: 100;
   }
 }
 
@@ -59,8 +64,9 @@
 }
 
 .hero__icecream {
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // bottom: 0;
+  margin-bottom: -7px;
   opacity: 0;
   animation-name: icecream;
   animation-duration: var(--animationDuration);
@@ -90,13 +96,14 @@
   animation-fill-mode: forwards;
   animation-name: hero__btns;
   z-index: 100;
-}
-.hero__btn:nth-child(1) {
-  animation-delay: 3.5s;
-}
 
-.hero__btn:nth-child(2) {
-  animation-delay: 4s;
+  &:nth-child(1) {
+    animation-delay: 3.5s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 4s;
+  }
 }
 
 @keyframes hero__btns {
@@ -112,4 +119,8 @@
     opacity: 1;
     scale: 1;
   }
+}
+
+.hero__stats {
+  display: none;
 }
