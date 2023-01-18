@@ -4,18 +4,19 @@
 
 @import './variables';
 
-@import './header.scss';
-@import '../sass/tablet/header';
-@import '../sass/desktop/header';
+@import './mob/header';
+@import './tablet/header';
+@import './desktop/header';
 
-@import './hero';
+@import './mob/hero';
 @import './tablet/hero';
+@import './desktop/hero';
 
-@import './products';
-@import './howItsMade';
-@import './gallery';
-@import './reviews';
-@import './location';
-@import './footer';
+@import './mob/products';
+@import './mob/howItsMade';
+@import './mob/gallery';
+@import './mob/reviews';
+@import './mob/location';
+@import './mob/footer';
 
 @import './buttons';

@@ -1,0 +1,16 @@
+@media screen and (min-width: $desktop) {
+  .hero__section {
+    min-height: 665px;
+  }
+  @keyframes icecream {
+    0% {
+      width: 11px;
+      right: 132px;
+    }
+    100% {
+      opacity: 1;
+      width: 236px;
+      right: 450px;
+    }
+  }
+}
