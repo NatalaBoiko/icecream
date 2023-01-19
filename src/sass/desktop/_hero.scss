@@ -1,7 +1,27 @@
 @media screen and (min-width: $desktop) {
   .hero__section {
+    padding-top: 171px;
+    padding-bottom: 45px;
     min-height: 665px;
+    background-size: 538px;
   }
+
+  @keyframes bg__img {
+    0% {
+      background-position: bottom 75px right -538px;
+    }
+    100% {
+      background-position: bottom 75px right 267px;
+    }
+  }
+
+  .hero__title {
+    font-size: 38px;
+    & span {
+      font-size: 58px;
+    }
+  }
+
   @keyframes icecream {
     0% {
       width: 11px;
@@ -11,6 +31,39 @@
       opacity: 1;
       width: 236px;
       right: 450px;
+    }
+  }
+
+  .hero__btn {
+    padding: 15px 24px;
+  }
+
+  .hero__milk {
+    margin-top: 56px;
+    width: 418px;
+    column-gap: 30px;
+
+    & img {
+      width: 188px;
+    }
+
+    &-descr {
+      margin-top: 56px;
+    }
+
+    & p {
+      width: 200px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    & button {
+      width: 26px;
+      height: 26px;
+    }
+    & svg {
+      width: 7px;
+      height: 7px;
     }
   }
 }

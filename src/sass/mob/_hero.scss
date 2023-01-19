@@ -14,6 +14,7 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+
 @keyframes bg__img {
   0% {
     background-position: bottom 75px right -347px;
@@ -30,8 +31,6 @@
   color: var(--font-color-one);
   text-shadow: 3px 3px 1px #0000003d;
   margin-bottom: 19px;
-
-  // z-index: 100;
 
   animation-name: hero__title;
   animation-duration: var(--animationDuration);
@@ -105,9 +104,29 @@
   }
 }
 
+@keyframes hero__btns {
+  0% {
+    opacity: 0;
+    scale: 0.1;
+  }
+  80% {
+    opacity: 1;
+    scale: 1.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.hero__milk-wrapper {
+  display: none;
+}
+
 @keyframes icecream {
   0% {
     width: 11px;
+    height: 11px;
     right: 132px;
   }
   100% {
@@ -115,6 +134,7 @@
     bottom: -7px;
     opacity: 1;
     width: 171px;
+    height: 410px;
     right: 32px;
   }
 }

@@ -1,6 +1,7 @@
 @media screen and (min-width: $tablet) {
   .hero__section {
     padding-top: 102px;
+    padding-bottom: 19px;
     min-height: 400px;
     background-size: 324px;
 
@@ -24,14 +25,67 @@
     }
   }
 
+  .hero__milk {
+    display: flex;
+    width: 230px;
+    margin-top: 19px;
+    animation-name: burger__menu;
+    animation-duration: var(--animationDuration);
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    & img {
+      width: 124px;
+    }
+
+    &-descr {
+      margin-top: 47px;
+    }
+
+    & p {
+      margin-bottom: 7px;
+      font-family: DM Sans;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: var(--font-color-one);
+    }
+    & button {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      position: relative;
+    }
+    & svg {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      top: 39%;
+      left: 37%;
+    }
+  }
+
+  @keyframes burger__menu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
   @keyframes icecream {
     0% {
       width: 11px;
+      height: 11px;
       right: 132px;
     }
     100% {
       opacity: 1;
       width: 143px;
+      height: 336px;
       right: 247px;
     }
   }
@@ -43,36 +97,67 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+
+    &-item {
+      font-size: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-shadow: 3px 3px 1px #0000003d;
+      & span {
+        font-family: DM Sans;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: var(--font-color-one);
+      }
+      &:nth-child(1) {
+        margin-bottom: 13px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 72px;
+      }
+      &:nth-child(3) {
+        width: 168px;
+        // overflow: hidden;
+      }
+      & img {
+        width: 168px;
+        margin-bottom: -8px;
+      }
+    }
   }
 
-  .hero__stats-item {
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-shadow: 3px 3px 1px #0000003d;
-    & span {
-      font-family: DM Sans;
-      font-size: 8px;
-      font-weight: 400;
-      line-height: 10px;
-      letter-spacing: 0em;
-      text-align: right;
-      color: var(--font-color-one);
-    }
-    &:nth-child(1) {
-      margin-bottom: 13px;
-    }
-    &:nth-child(2) {
-      margin-bottom: 72px;
-    }
-    &:nth-child(3) {
-      width: 168px;
-      // overflow: hidden;
-    }
-    & img {
-      width: 168px;
-      margin-bottom: -8px;
-    }
-  }
+  // .hero__stats-item {
+  //   font-size: 28px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: flex-end;
+  //   text-shadow: 3px 3px 1px #0000003d;
+  //   & span {
+  //     font-family: DM Sans;
+  //     font-size: 8px;
+  //     font-weight: 400;
+  //     line-height: 10px;
+  //     letter-spacing: 0em;
+  //     text-align: right;
+  //     color: var(--font-color-one);
+  //   }
+  //   &:nth-child(1) {
+  //     margin-bottom: 13px;
+  //   }
+  //   &:nth-child(2) {
+  //     margin-bottom: 72px;
+  //   }
+  //   &:nth-child(3) {
+  //     width: 168px;
+  //     // overflow: hidden;
+  //   }
+  //   & img {
+  //     width: 168px;
+  //     margin-bottom: -8px;
+  //   }
+  // }
 }

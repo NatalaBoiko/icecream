@@ -1,0 +1,9 @@
+@media screen and (min-width: $desktop) {
+  .btns {
+    column-gap: 17px;
+  }
+  .btn a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

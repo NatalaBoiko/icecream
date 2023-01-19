@@ -1,6 +1,6 @@
 @import './common';
 @import './tablet/common';
-// @import './desktop/common';
+@import './desktop/common';
 
 @import './variables';
 
@@ -19,4 +19,5 @@
 @import './mob/location';
 @import './mob/footer';
 
-@import './buttons';
+@import './mob/buttons';
+@import './desktop/buttons';
