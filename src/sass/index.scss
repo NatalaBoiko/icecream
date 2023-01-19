@@ -1,4 +1,4 @@
-@import './common';
+@import './mob/common';
 @import './tablet/common';
 @import './desktop/common';
 
@@ -13,6 +13,9 @@
 @import './desktop/hero';
 
 @import './mob/products';
+@import './tablet/products';
+@import './desktop/products';
+
 @import './mob/howItsMade';
 @import './mob/gallery';
 @import './mob/reviews';

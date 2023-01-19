@@ -2,5 +2,16 @@
   section {
     padding-left: var(--secton_tablet_padding);
     padding-right: var(--secton_tablet_padding);
+    padding-top: 120px;
+    padding-bottom: 110px;
+  }
+
+  .section__title {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+
+  .section__review {
+    font-size: 26px;
   }
 }

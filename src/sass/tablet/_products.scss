@@ -1,0 +1,17 @@
+@media screen and (min-width: $tablet) {
+  .product__vrapper {
+    width: 220px;
+
+    & img {
+      width: 220px;
+      margin-bottom: 30px;
+      margin-top: -140px;
+    }
+  }
+
+  .product__description {
+    line-height: 1.8;
+    width: 155px;
+    margin-bottom: 40px;
+  }
+}
