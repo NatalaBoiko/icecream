@@ -32,6 +32,8 @@
   text-shadow: 3px 3px 1px #0000003d;
   margin-bottom: 19px;
 
+  opacity: 0;
+
   animation-name: hero__title;
   animation-duration: var(--animationDuration);
   animation-timing-function: linear;
@@ -64,8 +66,10 @@
 
 .hero__icecream {
   position: absolute;
-  bottom: -7px;
+  bottom: 100px;
   opacity: 0;
+  width: 171px;
+  height: 410px;
   animation-name: icecream;
   animation-duration: var(--animationDuration);
   animation-timing-function: linear;
@@ -74,15 +78,12 @@
 }
 @keyframes icecream {
   0% {
-    width: 11px;
-    right: 132px;
+    transform: scale(0.1);
   }
   100% {
-    position: absolute;
-    bottom: -7px;
     opacity: 1;
-    width: 171px;
-    right: 32px;
+    transform: scale(1);
+    bottom: -7px;
   }
 }
 
@@ -102,6 +103,10 @@
   &:nth-child(2) {
     animation-delay: 4s;
   }
+}
+
+.hero__milk {
+  display: none;
 }
 
 @keyframes hero__btns {

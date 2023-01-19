@@ -22,15 +22,23 @@
     }
   }
 
+  .hero__icecream {
+    width: 236px;
+    height: 557px;
+    right: 450px;
+    animation-name: icecream;
+  }
+
   @keyframes icecream {
     0% {
-      width: 11px;
-      right: 132px;
+      opacity: 0;
+      transform: scale(0.1);
     }
     100% {
       opacity: 1;
-      width: 236px;
-      right: 450px;
+      transform: scale(1);
+      // right: 450px;
+      bottom: -7px;
     }
   }
 
@@ -64,6 +72,27 @@
     & svg {
       width: 7px;
       height: 7px;
+    }
+  }
+
+  .hero__stats {
+    right: 100px;
+    &-item {
+      font-size: 46px;
+      line-height: 52.67px;
+      & span {
+        font-size: 14px;
+      }
+      &:nth-child(1) {
+        margin-bottom: 15px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 109px;
+      }
+      & img {
+        width: 293px;
+        margin-bottom: -14px;
+      }
     }
   }
 }

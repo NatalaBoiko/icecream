@@ -76,17 +76,22 @@
     }
   }
 
+  .hero__icecream {
+    width: 143px;
+    height: 336px;
+    right: 247px;
+    animation-name: icecream;
+  }
   @keyframes icecream {
     0% {
-      width: 11px;
-      height: 11px;
-      right: 132px;
+      opacity: 0;
+      transform: scale(0.1);
     }
     100% {
       opacity: 1;
-      width: 143px;
-      height: 336px;
-      right: 247px;
+      transform: scale(1);
+      bottom: -7px;
+      // right: 247px;
     }
   }
 
@@ -100,6 +105,7 @@
 
     &-item {
       font-size: 28px;
+      line-height: 32.06px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -119,45 +125,27 @@
       &:nth-child(2) {
         margin-bottom: 72px;
       }
-      &:nth-child(3) {
-        width: 168px;
-        // overflow: hidden;
-      }
       & img {
         width: 168px;
         margin-bottom: -8px;
+        opacity: 0;
+
+        animation-name: heroGirl;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        // animation-delay: 1s;
+        transform-origin: bottom;
       }
     }
   }
-
-  // .hero__stats-item {
-  //   font-size: 28px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: flex-end;
-  //   text-shadow: 3px 3px 1px #0000003d;
-  //   & span {
-  //     font-family: DM Sans;
-  //     font-size: 8px;
-  //     font-weight: 400;
-  //     line-height: 10px;
-  //     letter-spacing: 0em;
-  //     text-align: right;
-  //     color: var(--font-color-one);
-  //   }
-  //   &:nth-child(1) {
-  //     margin-bottom: 13px;
-  //   }
-  //   &:nth-child(2) {
-  //     margin-bottom: 72px;
-  //   }
-  //   &:nth-child(3) {
-  //     width: 168px;
-  //     // overflow: hidden;
-  //   }
-  //   & img {
-  //     width: 168px;
-  //     margin-bottom: -8px;
-  //   }
-  // }
+  @keyframes heroGirl {
+    0% {
+      transform: perspective(500px) rotateX(90deg);
+    }
+    100% {
+      transform: perspective(500px) rotateX(0deg);
+      opacity: 1;
+    }
+  }
 }
