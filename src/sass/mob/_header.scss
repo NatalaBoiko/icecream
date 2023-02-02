@@ -1,12 +1,11 @@
 header {
   width: 100vw;
   padding: 6px var(--secton_side_padding);
-  // background-color: var(--headerBg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // content-visibility: auto;
-  position: fixed;
+  // position: fixed;
+  // margin-top: -62px;
   z-index: 105;
 }
 

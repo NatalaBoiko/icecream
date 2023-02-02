@@ -1,0 +1,25 @@
+@media screen and (min-width: $desktop) {
+  .how__section {
+    background-image: url(../images/about-bg-milk.png);
+    background-position: center;
+  }
+
+  .how__main {
+    column-gap: 74px;
+  }
+
+  .how__description {
+    font-size: 16px;
+    line-height: 28px;
+
+    width: 463px;
+  }
+
+  .how__statistic-item {
+    width: 330px;
+
+    & p {
+      width: inherit;
+    }
+  }
+}
