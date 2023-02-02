@@ -6,6 +6,7 @@
     var(--third-section-bg) 100%
   );
   padding-top: 86px;
+  padding-bottom: 113px;
 
   & ul {
     display: flex;
@@ -90,8 +91,13 @@
   color: var(--font-color-five);
 }
 
+.location__btns {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
 .location__btn {
   width: 162px;
   height: 44px;
-  margin-bottom: 10px;
 }
