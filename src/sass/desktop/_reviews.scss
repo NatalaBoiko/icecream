@@ -1,0 +1,18 @@
+@media screen and (min-width: $desktop) {
+  .reviews__item {
+    &-wrapper {
+      width: 926px;
+      padding: 47px 54px 32px 86px;
+      background-color: var(--review-bg);
+    }
+  }
+
+  .reviews__descr {
+    font-size: 16px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+    line-height: 37.2px;
+  }
+}

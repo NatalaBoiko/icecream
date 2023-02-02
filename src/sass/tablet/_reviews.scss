@@ -1,0 +1,22 @@
+@media screen and (min-width: $tablet) {
+  .reviews__item {
+    &-wrapper {
+      padding: 45px 36px 28px 76px;
+    }
+
+    &-dots {
+      margin-top: 24px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .reviews__descr {
+    font-size: 14px;
+  }
+
+  .reviews__name {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+}

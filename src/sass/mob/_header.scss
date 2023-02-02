@@ -4,9 +4,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: fixed;
-  // margin-top: -62px;
   z-index: 105;
+  background-color: rgba(0, 255, 255, 0.425);
 }
 
 .header__logo {
