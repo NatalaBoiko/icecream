@@ -1,0 +1,51 @@
+@media screen and (min-width: $tablet) {
+  .location__section {
+    background-image: linear-gradient(
+      var(--second-section-bg) 197px,
+      var(--third-section-bg) 197px,
+      var(--third-section-bg) 100%
+    );
+    padding-top: 119px;
+    padding-bottom: 158px;
+
+    & ul {
+      flex-direction: row;
+      column-gap: 20px;
+      margin-bottom: 81px;
+    }
+  }
+
+  .location__item {
+    padding: 50px 32px;
+  }
+
+  .location__wrap {
+    &:not(:last-child) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+
+    & div:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .location__name {
+    font-size: 16px;
+    height: 20px;
+
+    margin-bottom: 30px;
+  }
+
+  .location__item p,
+  .location__item a {
+    font-size: 14px;
+    line-height: 23.24px;
+    letter-spacing: 0.04em;
+  }
+
+  .location__btns {
+    display: flex;
+    column-gap: 15px;
+  }
+}

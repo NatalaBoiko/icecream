@@ -27,7 +27,7 @@
 .btn:focus {
   box-shadow: var(--btnShadow);
   background-color: var(--font-color-two);
-  transform: scale(1.1);
+  transform: scale(0.95);
   color: var(--font-color-one);
 
   & a {

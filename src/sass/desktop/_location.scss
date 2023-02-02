@@ -1,0 +1,41 @@
+@media screen and (min-width: $desktop) {
+  .location__section {
+    background-image: linear-gradient(
+      var(--second-section-bg) 234px,
+      var(--third-section-bg) 234px,
+      var(--third-section-bg) 100%
+    );
+    padding-top: 132px;
+    padding-bottom: 165px;
+
+    & ul {
+      column-gap: 29px;
+      margin-bottom: 86px;
+    }
+  }
+
+  .location__item {
+    width: 330px;
+    padding: 50px 44px 62px;
+  }
+
+  .location__wrap {
+    &:not(:last-child) {
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .location__name {
+    height: 28px;
+    margin-bottom: 32px;
+  }
+
+  .location__name,
+  .location__item p,
+  .location__item a {
+    font-size: 16px;
+    line-height: 29.76px;
+    letter-spacing: 0.04em;
+  }
+}
