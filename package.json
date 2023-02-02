@@ -17,7 +17,9 @@
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
