@@ -9,12 +9,15 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  min-height: 100%;
 }
 
 section {

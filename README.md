@@ -97,3 +97,11 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
    скрипта будет указано в чем проблема.
+
+   ## footer to bottom
+
+html { min-height: 100%; }
+
+body { display: flex; flex-direction: column; min-height: 100%; }
+
+footer{ margin-top: auto; }
