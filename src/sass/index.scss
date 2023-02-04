@@ -30,7 +30,13 @@
 @import './tablet/location';
 @import './desktop/location';
 
+@import './mob/contacts';
+@import './tablet/contacts';
+@import './desktop/contacts';
+
 @import './mob/footer';
+@import './tablet/footer';
+@import './desktop/footer';
 
 @import './mob/buttons';
 @import './tablet/buttons';

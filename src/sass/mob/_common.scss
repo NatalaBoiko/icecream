@@ -20,6 +20,9 @@ body {
   min-height: 100%;
 }
 
+main {
+  border-bottom: 1px solid var(--review-bg-lines);
+}
 section {
   padding-left: var(--secton_side_padding);
   padding-right: var(--secton_side_padding);
@@ -43,7 +46,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+svg {
   display: block;
   margin: 0;
 }

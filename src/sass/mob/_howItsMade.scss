@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile) {
   .how__section {
     background-image: url(../images/about-bg-milk.png);
   }
