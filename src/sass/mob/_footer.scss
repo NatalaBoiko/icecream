@@ -1,7 +1,9 @@
 .footer {
   width: 100vw;
+  margin-top: auto;
   background-color: var(--third-section-bg);
   padding: 25px;
+  border-top: 1px solid var(--review-bg-lines);
 
   display: flex;
   flex-direction: column;
@@ -35,9 +37,3 @@
     }
   }
 }
-
-// .all__p {
-//   display: flex;
-//   justify-content: center;
-//   column-gap: 3px;
-// }

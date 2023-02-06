@@ -1,20 +1,8 @@
 @media screen and (min-width: $desktop) {
-  .footer__section {
-    padding: 0px var(--secton_desktop_padding);
-  }
-
-  .footer__contacts {
-    padding-bottom: 98px;
-  }
-
-  .footer__header {
-    &-light {
-      font-size: 30px;
-      line-height: 29.77px;
-    }
-
-    &-dark {
-      font-size: 58px;
-    }
+  .footer {
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5px;
   }
 }

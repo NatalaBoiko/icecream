@@ -1,50 +1,8 @@
 @media screen and (min-width: $tablet) {
-  .footer__section {
-    padding: 0px var(--secton_tablet_padding);
-  }
-
-  .footer__contacts {
-    padding-bottom: 90px;
+  .footer {
+    padding: 29px;
     flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer__header {
-    width: 340px;
-
-    &-light {
-      font-size: 26px;
-      line-height: 29.77px;
-    }
-
-    &-dark {
-      font-size: 48px;
-      line-height: 54.96px;
-    }
-  }
-
-  .footer__social {
-    column-gap: 30px;
-    margin-bottom: 50px;
-
-    & svg {
-      width: 34px;
-      height: 34px;
-    }
-  }
-
-  .footer__contact {
-    font-size: 14px;
-  }
-
-  .all__rights {
-    display: flex;
     justify-content: center;
-    column-gap: 6px;
-    padding: 18px;
-  }
-
-  .all__rights::before {
-    bottom: 58px;
+    column-gap: 5px;
   }
 }
