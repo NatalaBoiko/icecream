@@ -78,21 +78,17 @@
   }
 
   .hero__icecream {
-    width: 143px;
-    height: 336px;
     right: 247px;
-    animation-name: icecream;
   }
+
   @keyframes icecream {
     0% {
-      opacity: 0;
-      transform: scale(0.1);
     }
     100% {
       opacity: 1;
-      transform: scale(1);
       bottom: -7px;
-      // right: 247px;
+      width: 143px;
+      height: 336px;
     }
   }
 

@@ -55,12 +55,10 @@
 @keyframes hero__title {
   0% {
     opacity: 0;
-    // top: 500px;
     left: -300px;
   }
   100% {
     opacity: 1;
-    // top: 30px;
     left: 20;
   }
 }
@@ -69,22 +67,25 @@
   position: absolute;
   bottom: 100px;
   opacity: 0;
-  width: 171px;
-  height: 410px;
+  width: 0;
+  height: 0;
   animation-name: icecream;
   animation-duration: var(--animationDuration);
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-delay: 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 @keyframes icecream {
   0% {
-    transform: scale(0.1);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
     bottom: -7px;
+    width: 171px;
+    height: 410px;
   }
 }
 
