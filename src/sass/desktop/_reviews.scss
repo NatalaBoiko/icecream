@@ -3,7 +3,7 @@
     &-wrapper {
       width: 926px;
       padding: 47px 54px 32px 86px;
-      background-color: var(--review-bg);
+      width: calc(100vw - 352px);
     }
   }
 
@@ -14,5 +14,13 @@
   .reviews__name {
     font-size: 20px;
     line-height: 37.2px;
+  }
+
+  .swiper-button-prev {
+    left: 120px;
+  }
+
+  .swiper-button-next {
+    right: 120px;
   }
 }

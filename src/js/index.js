@@ -6,3 +6,4 @@
 // const taxNum = parseInt(tax) / 100;
 // const taxSal = sal + sal * taxNum + sal * taxNum ** 2 + sal * taxNum ** 3;
 // console.log(taxSal);
+import slider from './slider';

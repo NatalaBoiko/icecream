@@ -1,7 +1,12 @@
 @media screen and (min-width: $tablet) {
+  .reviews__customer {
+    margin-bottom: 15px;
+  }
+
   .reviews__item {
     &-wrapper {
       padding: 45px 36px 28px 76px;
+      width: calc(100vw - 148px);
     }
 
     &-dots {
@@ -18,5 +23,13 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 35px;
+  }
+
+  .swiper-button-prev {
+    left: 22px;
+  }
+
+  .swiper-button-next {
+    right: 22px;
   }
 }

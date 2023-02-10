@@ -1,8 +1,42 @@
-<section class="reviews__section">
+<section class="reviews swiper">
   <h2 class="hidden__title">Reviews</h2>
-  <ul class="reviews__list">
-    <li class="reviews__item">
-      <img src="./images/customer-reviews-first.png" alt="" />
+
+  <ul class="reviews__list swiper-wrapper">
+    <li class="reviews__item swiper-slide">
+      <img
+        class="reviews__customer"
+        srcset="
+          images/customer-reviews-first.png    1x,
+          images/customer-reviews-first@2x.png 2x
+        "
+        alt="customers photo"
+        loading="lazy"
+      />
+      <div class="reviews__item-wrapper">
+        <p class="reviews__descr">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+          ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <img
+        class="reviews__item-dots"
+        src="./images/customer-reviews-ellipse.png"
+        alt="customers photo"
+        loading="lazy"
+      />
+      <p class="reviews__name">Emily, Los Angeles</p>
+    </li>
+
+    <li class="reviews__item swiper-slide">
+      <img
+        srcset="
+          images/customer-reviews-second.png    1x,
+          images/customer-reviews-second@2x.png 2x
+        "
+        alt="customers photo"
+        loading="lazy"
+      />
       <div class="reviews__item-wrapper">
         <p class="reviews__descr">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
@@ -16,7 +50,36 @@
         alt=""
       />
       <p class="reviews__name">Emily, Los Angeles</p>
-      <div class="reviews__temporary"></div>
+    </li>
+
+    <li class="reviews__item swiper-slide">
+      <img
+        srcset="
+          images/customer-reviews-third.png    1x,
+          images/customer-reviews-third@2x.png 2x
+        "
+        alt="customers photo"
+      />
+      <div class="reviews__item-wrapper">
+        <p class="reviews__descr">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+          ipsum primis in nibh vel risus.
+        </p>
+      </div>
+      <img
+        class="reviews__item-dots"
+        src="./images/customer-reviews-ellipse.png"
+        alt=""
+      />
+      <p class="reviews__name">Emily, Los Angeles</p>
     </li>
   </ul>
+
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+
+  <div class="swiper-pagination"></div>
 </section>
+
+<!-- -->
