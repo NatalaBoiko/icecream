@@ -105,3 +105,13 @@ html { min-height: 100%; }
 body { display: flex; flex-direction: column; min-height: 100%; }
 
 footer{ margin-top: auto; }
+
+## disable scroll
+
+function disableScroll () { window.scrollTo(0, 0); }
+
+or
+
+const disableScroll = () => { window.scrollTo(0, 0); };
+
+window.addEventListener('scroll', disableScroll);

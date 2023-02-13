@@ -55,7 +55,7 @@ header {
   &:focus,
   &:hover {
     scale: 110%;
-    // rotate: 90deg;
+    rotate: 90deg;
   }
 
   & svg {
@@ -64,9 +64,9 @@ header {
   }
 }
 
-.burger__button-hovered {
-  rotate: 90deg;
-}
+// .burger__button-hovered {
+//   rotate: 90deg;
+// }
 
 .header__btn {
   width: 160px;
