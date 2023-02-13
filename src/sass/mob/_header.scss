@@ -46,6 +46,7 @@ header {
 }
 
 .burger__button {
+  // z-index: 30;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -54,13 +55,17 @@ header {
   &:focus,
   &:hover {
     scale: 110%;
-    rotate: 90deg;
+    // rotate: 90deg;
+  }
+
+  & svg {
+    width: 20px;
+    height: 12px;
   }
 }
 
-.burger__menu {
-  width: 20px;
-  height: 12px;
+.burger__button-hovered {
+  rotate: 90deg;
 }
 
 .header__btn {

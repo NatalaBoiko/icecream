@@ -1,8 +1,8 @@
 .mobile__menu {
+  z-index: 110;
   position: absolute;
   top: 0;
-  right: -100%;
-  //   right: 0px;
+  right: -250px;
   background-color: #e17992;
   padding-top: 60px;
   padding-bottom: 100vh;
@@ -53,6 +53,10 @@
       font-weight: bold;
     }
   }
+}
+
+.mobile__menu-visible {
+  right: 0;
 }
 
 @media screen and (min-width: $desktop) {
