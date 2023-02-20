@@ -5,22 +5,31 @@ const burgerButton = document.querySelector('.burger__button');
 const mobileMenuItems = document.querySelectorAll('.mobile__menu-nav li');
 
 burgerBtn.addEventListener('click', e => {
-  console.log(e.target);
-  mobileMenu.classList.toggle('mobile__menu-visible');
-  // burgerBtn.classList.toggle('burger__button-hovered');
+  mobileMenu.classList.add('mobile__menu-visible');
 
   if (mobileMenu.className.includes('mobile__menu-visible')) {
-    console.log(mobileMenu.className);
-
     hederBtn.classList.toggle('is-hidden');
     burgerButton.classList.toggle('is-hidden');
 
     // window.addEventListener('scroll', () => {
     //   window.scrollTo(0, 0);
     // });
+
+    window.addEventListener('click', e => {
+      if (e.target.className.includes('mobile__menu-visible')) {
+        console.log('includes');
+        return;
+      } else {
+        mobileMenu.classList.toggle('mobile__menu-visible');
+        hederBtn.classList.toggle('is-hidden');
+        burgerButton.classList.toggle('is-hidden');
+        console.log(e.target);
+      }
+    });
   } else {
     hederBtn.classList.toggle('is-hidden');
     burgerButton.classList.toggle('is-hidden');
+    console.log('else');
   }
 });
 
