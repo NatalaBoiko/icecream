@@ -1,45 +1,47 @@
 const burgerBtn = document.querySelector('.burger__button');
 const mobileMenu = document.querySelector('.mobile__menu');
+const closeBtn = document.querySelector('.mobile__menu-cross');
 const hederBtn = document.querySelector('.header__btn');
-const burgerButton = document.querySelector('.burger__button');
 const mobileMenuItems = document.querySelectorAll('.mobile__menu-nav li');
 const section = document.querySelector('.hero__section');
+
+const closeMenu = e => {
+  if (!mobileMenu.classList.contains('mobile__menu-visible')) {
+    return;
+  } else {
+    mobileMenu.classList.toggle('mobile__menu-visible');
+    hederBtn.classList.toggle('is-hidden');
+    burgerBtn.classList.toggle('is-hidden');
+  }
+};
+
+const closeMenuByClick = e => {
+  section.addEventListener('click', e => {
+    if (e.target === e.currentTarget) {
+      mobileMenu.classList.remove('mobile__menu-visible');
+      hederBtn.classList.remove('is-hidden');
+      burgerBtn.classList.remove('is-hidden');
+    }
+  });
+};
 
 burgerBtn.addEventListener('click', e => {
   mobileMenu.classList.add('mobile__menu-visible');
 
   if (mobileMenu.classList.contains('mobile__menu-visible')) {
     hederBtn.classList.toggle('is-hidden');
-    burgerButton.classList.toggle('is-hidden');
-
+    burgerBtn.classList.toggle('is-hidden');
+    // closeMenu();
     closeMenuByClick();
   } else {
     hederBtn.classList.toggle('is-hidden');
-    burgerButton.classList.toggle('is-hidden');
+    burgerBtn.classList.toggle('is-hidden');
     console.log('else');
   }
 });
 
-mobileMenuItems.forEach(item => {
-  item.addEventListener('click', e => {
-    if (!mobileMenu.classList.contains('mobile__menu-visible')) {
-      return;
-    } else {
-      mobileMenu.classList.toggle('mobile__menu-visible');
-      hederBtn.classList.toggle('is-hidden');
-      burgerButton.classList.toggle('is-hidden');
-    }
-  });
-});
+closeBtn.addEventListener('click', closeMenu);
 
-function closeMenuByClick(e) {
-  section.addEventListener('click', e => {
-    if (e.target === e.currentTarget) {
-      mobileMenu.classList.remove('mobile__menu-visible');
-      hederBtn.classList.remove('is-hidden');
-      burgerButton.classList.remove('is-hidden');
-    }
-  });
-}
-// or
-// closeMenuByClick();
+mobileMenuItems.forEach(item => {
+  item.addEventListener('click', closeMenu);
+});

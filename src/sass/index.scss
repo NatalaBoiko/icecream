@@ -1,14 +1,17 @@
+@import './variables';
+
+@import './mob/buttons';
+@import './tablet/buttons';
+
 @import './mob/common';
 @import './tablet/common';
 @import './desktop/common';
-
-@import './variables';
 
 @import './mob/header';
 @import './tablet/header';
 @import './desktop/header';
 
-@import './mob/mobileMenu';
+@import './mob/burgerMenu';
 
 @import './mob/hero';
 @import './tablet/hero';
@@ -40,6 +43,4 @@
 @import './tablet/footer';
 @import './desktop/footer';
 
-@import './mob/buttons';
-@import './tablet/buttons';
 // @import './desktop/buttons';
