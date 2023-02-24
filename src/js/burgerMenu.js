@@ -9,9 +9,9 @@ const closeMenu = e => {
   if (!mobileMenu.classList.contains('mobile__menu-visible')) {
     return;
   } else {
-    mobileMenu.classList.toggle('mobile__menu-visible');
-    hederBtn.classList.toggle('is-hidden');
-    burgerBtn.classList.toggle('is-hidden');
+    mobileMenu.classList.remove('mobile__menu-visible');
+    hederBtn.classList.remove('is-hidden');
+    burgerBtn.classList.remove('is-hidden');
   }
 };
 
@@ -31,7 +31,6 @@ burgerBtn.addEventListener('click', e => {
   if (mobileMenu.classList.contains('mobile__menu-visible')) {
     hederBtn.classList.toggle('is-hidden');
     burgerBtn.classList.toggle('is-hidden');
-    // closeMenu();
     closeMenuByClick();
   } else {
     hederBtn.classList.toggle('is-hidden');
