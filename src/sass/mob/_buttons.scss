@@ -62,7 +62,7 @@
   font-family: inherit;
   font-weight: bold;
   font-size: 8px;
-  box-shadow: 0 0 15px 10px #fff, 0 0 20px 3px var(--font-color-two);
+  box-shadow: 0 0 15px 10px #fff, 0 0 18px 1px var(--font-color-two);
 
   opacity: 0;
   transition-duration: var(--animationDuration);
@@ -70,5 +70,12 @@
   &-visible {
     opacity: 1;
     bottom: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #d41444c4;
+    transform: scale(1.1);
+    border: 1px solid #fff;
   }
 }
