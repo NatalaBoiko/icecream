@@ -55,7 +55,7 @@
   height: 40px;
   position: fixed;
   bottom: -50px;
-  left: 80vw;
+  right: 40px;
 
   text-align: center;
   color: var(--font-color-one);
@@ -66,9 +66,9 @@
 
   opacity: 0;
   transition-duration: var(--animationDuration);
-}
 
-.to_top-visible {
-  opacity: 1;
-  bottom: 40px;
+  &-visible {
+    opacity: 1;
+    bottom: 40px;
+  }
 }
