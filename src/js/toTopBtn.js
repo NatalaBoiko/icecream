@@ -1,5 +1,5 @@
 const toTopBtn = document.querySelector('.to_top');
-console.log(toTopBtn);
+// console.log(toTopBtn);
 
 const showToTopBtn = () => {
   window.scrollY >= 100
