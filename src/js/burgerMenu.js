@@ -17,7 +17,8 @@ const closeMenu = e => {
 
 const closeMenuByClick = e => {
   section.addEventListener('click', e => {
-    if (e.target === e.currentTarget) {
+    // if (e.target === e.currentTarget)
+    if (e.target !== mobileMenu) {
       mobileMenu.classList.remove('mobile__menu-visible');
       hederBtn.classList.remove('is-hidden');
       burgerBtn.classList.remove('is-hidden');
