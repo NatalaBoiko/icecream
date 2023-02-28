@@ -91,32 +91,31 @@ a {
   visibility: hidden;
 }
 
-.modal {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    45deg,
-    rgb(255 255 255 / 50%),
-    var(--font-color-five)
-  );
-  z-index: 200;
-  display: none;
+// .modal {
+//   width: 100vw;
+//   height: 100vh;
+//   position: fixed;
+//   padding: 30px;
+//   align-items: center;
+//   justify-content: center;
+//   background: linear-gradient(
+//     45deg,
+//     rgb(255 255 255 / 50%),
+//     var(--font-color-five)
+//   );
+//   z-index: 200;
+//   display: none;
 
-  &__visible {
-    display: flex;
-  }
+//   &__visible {
+//     display: flex;
+//   }
 
-  &__content {
-    background-color: var(--second-section-bg);
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
-  }
-}
+//   &__content {
+//     background-color: var(--second-section-bg);
+//     padding: 50px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
+//   }
+// }

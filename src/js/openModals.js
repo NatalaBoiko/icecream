@@ -1,47 +1,52 @@
 const btns = document.querySelectorAll('button[data-modal]');
 const modals = document.querySelectorAll('.modal');
 
-const openModal = () => {
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      modals.forEach(modal => {
-        console.log(modal.id);
+console.log(btns);
+console.log(modals);
 
-        if (modal.id === btn.dataset.modal) {
-          modal.classList.add('modal__visible');
-        } else {
-          modal.classList.remove('modal__visible');
-        }
-      });
-    });
-  });
-};
-
-const closeModalByBackdrop = e => {
-  modals.forEach(modal => {
-    modal.addEventListener('click', e => {
-      //   console.log(modal.classList);
-      if (e.target === e.currentTarget) {
-        modal.classList.remove('modal__visible');
+// const openModal = () => {
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modals.forEach(modal => {
+      if (modal.id === btn.dataset.modal) {
+        // modal.classList.add('modal__visible');
+        modal.style.display = 'flex';
       } else {
-        console.log('hey');
+        // modal.classList.remove('modal__visible');
+        modal.style.display = 'none';
       }
     });
   });
-};
+});
+// };
 
-const closeModalByKeyDown = () => {
-  modals.forEach(modal => {
-    document.addEventListener('keydown', e => {
-      if (e.code === 'Escape') {
-        modal.classList.remove('modal__visible');
-      } else {
-        return;
-      }
-    });
+// const closeModalByBackdrop = e => {
+modals.forEach(modal => {
+  modal.addEventListener('click', e => {
+    //   console.log(modal.classList);
+    if (e.target === e.currentTarget) {
+      //   modal.classList.remove('modal__visible');
+      modal.style.display = 'none';
+    } else {
+      console.log('hey');
+    }
   });
-};
+});
+// };
 
-openModal();
-closeModalByBackdrop();
-closeModalByKeyDown();
+// const closeModalByKeyDown = () => {
+modals.forEach(modal => {
+  document.addEventListener('keydown', e => {
+    if (e.code === 'Escape') {
+      //   modal.classList.remove('modal__visible');
+      modal.style.display = 'none';
+    } else {
+      return;
+    }
+  });
+});
+// };
+
+// openModal();
+// closeModalByBackdrop();
+// closeModalByKeyDown();

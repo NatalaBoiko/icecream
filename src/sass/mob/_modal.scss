@@ -1,0 +1,32 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    rgb(255 255 255 / 50%),
+    var(--font-color-five)
+  );
+  z-index: 200;
+  // display: none;
+
+  display: flex;
+
+  &__content {
+    height: 100%;
+    background-color: var(--second-section-bg);
+    padding: 50px;
+    // display: flex;
+    // justify-content: center;
+    box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
+    overflow-y: scroll;
+  }
+  & p {
+    font-family: Titan One;
+    color: #ffa5ba;
+    text-align: center;
+  }
+}
