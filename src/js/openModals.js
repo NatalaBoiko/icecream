@@ -1,52 +1,44 @@
 const btns = document.querySelectorAll('button[data-modal]');
 const modals = document.querySelectorAll('.modal');
 
-console.log(btns);
-console.log(modals);
+const stopScroll = () => {
+  window.scrollTo(0, 0);
+};
+const closeModal = modal => {
+  modal.classList.remove('modal__visible');
+  window.removeEventListener('scroll', stopScroll);
+};
 
-// const openModal = () => {
 btns.forEach(btn => {
   btn.addEventListener('click', () => {
     modals.forEach(modal => {
       if (modal.id === btn.dataset.modal) {
-        // modal.classList.add('modal__visible');
-        modal.style.display = 'flex';
+        modal.classList.add('modal__visible');
+
+        window.addEventListener('scroll', stopScroll);
       } else {
-        // modal.classList.remove('modal__visible');
-        modal.style.display = 'none';
+        closeModal(modal);
       }
     });
   });
 });
-// };
 
-// const closeModalByBackdrop = e => {
 modals.forEach(modal => {
   modal.addEventListener('click', e => {
-    //   console.log(modal.classList);
     if (e.target === e.currentTarget) {
-      //   modal.classList.remove('modal__visible');
-      modal.style.display = 'none';
+      closeModal(modal);
     } else {
       console.log('hey');
     }
   });
 });
-// };
 
-// const closeModalByKeyDown = () => {
 modals.forEach(modal => {
   document.addEventListener('keydown', e => {
     if (e.code === 'Escape') {
-      //   modal.classList.remove('modal__visible');
-      modal.style.display = 'none';
+      closeModal(modal);
     } else {
       return;
     }
   });
 });
-// };
-
-// openModal();
-// closeModalByBackdrop();
-// closeModalByKeyDown();
