@@ -23,17 +23,12 @@
   &__visible {
     opacity: 1;
     visibility: visible;
-
-    // z-index: 200;
-    // top: 0;
   }
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     background-color: var(--second-section-bg);
     padding: 50px;
 

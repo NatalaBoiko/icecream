@@ -4,19 +4,23 @@ const body = document.body;
 
 const closeModal = modal => {
   modal.classList.remove('modal__visible');
-  body.style.overflow = 'auto';
+  // body.style.overflow = 'auto';
+  body.classList.remove('stop__scroll');
 };
 
 btns.forEach(btn => {
   btn.addEventListener('click', e => {
+    console.log(body.classList);
+    // body.style.overflow = 'hidden';
     modals.forEach(modal => {
       if (modal.id === btn.dataset.modal) {
         console.log(modal.id);
-        console.log(btn.dataset.modal);
         modal.classList.add('modal__visible');
-        body.style.overflow = 'hidden';
+        // body.style.overflow = 'hidden';
+        body.classList.add('stop__scroll');
       } else {
-        closeModal(modal);
+        // closeModal(modal);
+        return;
       }
     });
   });

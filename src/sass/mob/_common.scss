@@ -19,6 +19,10 @@ body {
   min-height: 100%;
 }
 
+.stop__scroll {
+  overflow: hidden;
+}
+
 section {
   padding-left: var(--secton_side_padding);
   padding-right: var(--secton_side_padding);
