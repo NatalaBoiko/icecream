@@ -1,21 +1,20 @@
 const btns = document.querySelectorAll('button[data-modal]');
 const modals = document.querySelectorAll('.modal');
+const body = document.body;
 
-const stopScroll = () => {
-  window.scrollTo(0, 0);
-};
 const closeModal = modal => {
   modal.classList.remove('modal__visible');
-  window.removeEventListener('scroll', stopScroll);
+  body.style.overflow = 'auto';
 };
 
 btns.forEach(btn => {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', e => {
     modals.forEach(modal => {
       if (modal.id === btn.dataset.modal) {
+        console.log(modal.id);
+        console.log(btn.dataset.modal);
         modal.classList.add('modal__visible');
-
-        window.addEventListener('scroll', stopScroll);
+        body.style.overflow = 'hidden';
       } else {
         closeModal(modal);
       }
@@ -28,7 +27,8 @@ modals.forEach(modal => {
     if (e.target === e.currentTarget) {
       closeModal(modal);
     } else {
-      console.log('hey');
+      console.log(e.target.nodeName);
+      return;
     }
   });
 });
