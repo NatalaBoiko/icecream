@@ -31,6 +31,8 @@
     align-items: center;
     background-color: var(--second-section-bg);
     padding: 50px;
+    text-align: center;
+    column-gap: 30px;
 
     box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
     overflow-x: hidden;
@@ -62,8 +64,25 @@
   }
 }
 
+.discr__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product__description {
   overflow-y: auto;
+}
+
+.cow {
+  & img {
+    width: 170px;
+    margin-bottom: 30px;
+  }
+
+  & p {
+    max-height: 300px;
+  }
 }
 
 @media screen and (max-width: 425px) {

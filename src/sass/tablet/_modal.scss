@@ -1,6 +1,6 @@
 @media screen and (min-width: $tablet) {
   .modal__content {
-    flex-direction: row;
+    // flex-direction: row;
     // align-items: center;
     & .discr__wrapper {
       display: flex;
@@ -8,5 +8,13 @@
       align-items: center;
       margin-left: 20px;
     }
+  }
+
+  .product__wpapper {
+    flex-direction: row;
+  }
+
+  .cow p {
+    max-height: 250px;
   }
 }

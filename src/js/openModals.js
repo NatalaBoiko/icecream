@@ -11,7 +11,6 @@ const closeModal = modal => {
 btns.forEach(btn => {
   btn.addEventListener('click', e => {
     console.log(body.classList);
-    // body.style.overflow = 'hidden';
     modals.forEach(modal => {
       if (modal.id === btn.dataset.modal) {
         console.log(modal.id);
@@ -19,7 +18,6 @@ btns.forEach(btn => {
         // body.style.overflow = 'hidden';
         body.classList.add('stop__scroll');
       } else {
-        // closeModal(modal);
         return;
       }
     });
