@@ -33,17 +33,24 @@
     padding: 50px;
     text-align: center;
     column-gap: 30px;
+    row-gap: 30px;
 
     box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
     overflow-x: hidden;
     overflow-y: auto;
 
+    max-height: 90vh;
+
     & .product__img {
       margin-bottom: 30px;
     }
 
-    & .product__name {
+    & h4 {
+      font-family: Titan One;
       color: #ffa5ba;
+    }
+
+    & .product__name {
       margin-bottom: 45px;
       &::after {
         content: '. . .';
@@ -60,7 +67,7 @@
     width: fit-content;
     height: inherit;
     margin-bottom: 0;
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 
@@ -77,28 +84,36 @@
 .cow {
   & img {
     width: 170px;
-    margin-bottom: 30px;
   }
 
   & p {
     max-height: 300px;
   }
 }
-// .location__modal {
-//   padding: 0;
-// }
+
 .location__content {
   padding: 0px;
 }
-// .location__map {
-//   width: 100vw;
-//   height: 100vh;
-// }
+
+.franchise {
+  row-gap: 20px;
+  & h4 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 1px #000, 8px 9px 5px #fff;
+  }
+  & p {
+    font-family: DM Sans;
+    font-weight: 900;
+
+    color: var(--font-color-three);
+  }
+}
 
 @media screen and (max-width: 425px) {
-  .product__img {
+  .product__wpapper img {
     max-width: 160px;
-    margin-bottom: 22px;
+    transition-duration: var(--transitionDuration);
     // max-height: inherit;
   }
 }
