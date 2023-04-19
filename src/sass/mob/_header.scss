@@ -46,7 +46,6 @@ header {
 }
 
 .burger__button {
-  // z-index: 30;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -63,10 +62,6 @@ header {
     height: 12px;
   }
 }
-
-// .burger__button-hovered {
-//   rotate: 90deg;
-// }
 
 .header__btn {
   width: 160px;

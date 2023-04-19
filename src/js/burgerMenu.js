@@ -1,11 +1,11 @@
 const burgerBtn = document.querySelector('.burger__button');
 const mobileMenu = document.querySelector('.mobile__menu');
-const closeBtn = document.querySelector('.mobile__menu-cross');
+// const closeBtn = document.querySelector('.mobile__menu-cross');
 const headerBtn = document.querySelector('.header__btn');
 const mobileMenuItems = document.querySelectorAll('.mobile__menu-nav li');
 const section = document.querySelector('.hero__section');
 
-const closeMenu = e => {
+const closeMenu = () => {
   if (!mobileMenu.classList.contains('mobile__menu-visible')) {
     return;
   } else {
@@ -15,13 +15,10 @@ const closeMenu = e => {
   }
 };
 
-const closeMenuByClick = e => {
+const closeMenuByClick = () => {
   section.addEventListener('click', e => {
-    // if (e.target === e.currentTarget)
     if (e.target !== mobileMenu) {
-      mobileMenu.classList.remove('mobile__menu-visible');
-      headerBtn.classList.remove('is-hidden');
-      burgerBtn.classList.remove('is-hidden');
+      closeMenu();
     }
   });
 };
@@ -40,8 +37,14 @@ burgerBtn.addEventListener('click', e => {
   }
 });
 
-closeBtn.addEventListener('click', closeMenu);
-
 mobileMenuItems.forEach(item => {
-  item.addEventListener('click', closeMenu);
+  item.addEventListener('click', closeMenu());
 });
+
+// document.addEventListener('keydown', e => {
+//   if (e.code === 'Escape') {
+//     closeMenu();
+//   } else {
+//     return;
+//   }
+// });

@@ -36,10 +36,24 @@
     row-gap: 30px;
 
     box-shadow: 0px 0px 9px rgb(0 0 0 / 33%);
-    overflow-x: hidden;
-    overflow-y: auto;
 
     max-height: 90vh;
+    position: relative;
+
+    & button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      position: absolute;
+      top: -30px;
+      right: 0px;
+
+      & svg {
+        width: 14px;
+        height: 14px;
+        stroke: var(--font-color-one);
+      }
+    }
 
     & .product__img {
       margin-bottom: 30px;
