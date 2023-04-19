@@ -40,7 +40,7 @@
     max-height: 90vh;
     position: relative;
 
-    & button {
+    & .modal__close {
       background-color: transparent;
       border: none;
       padding: 0;
@@ -122,6 +122,24 @@
 
     color: var(--font-color-three);
   }
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+
+  &-input,
+  &-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--font-color-three);
+    color: var(--font-color-three);
+  }
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.273);
 }
 
 @media screen and (max-width: 425px) {
