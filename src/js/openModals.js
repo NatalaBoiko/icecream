@@ -1,7 +1,10 @@
 const btns = document.querySelectorAll('button[data-modal]');
 const modals = document.querySelectorAll('.modal');
+const modalContent = document.querySelector('.modal__content');
 const body = document.body;
 const closeBtn = document.querySelectorAll('.modal__cross');
+
+const form = document.querySelector('.modal__form');
 
 const closeModal = modal => {
   modal.classList.remove('modal__visible');
@@ -25,12 +28,21 @@ btns.forEach(btn => {
 
 modals.forEach(modal => {
   modal.addEventListener('click', e => {
-    console.log(e.target);
-    console.log(e.currentTarget);
-    if (e.target === e.currentTarget || closeBtn) {
+    e.preventDefault();
+
+    form.addEventListener('click', e => {
+      e.preventDefault();
+    });
+
+    if (
+      e.target === modalContent ||
+      e.target.nodeName === 'INPUT' ||
+      e.target.nodeName === 'TEXTAREA'
+    ) {
+      e.preventDefault();
+    } else if (e.target === e.currentTarget || closeBtn) {
       closeModal(modal);
     } else {
-      // console.log(e.target.nodeName);
       return;
     }
   });

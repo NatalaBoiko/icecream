@@ -10,11 +10,26 @@
     </button>
 
     <form class="modal__form">
-      <input type="text" placeholder="Name" class="modal__form-input" />
-      <input type="text" placeholder="email" class="modal__form-input" />
+      <input
+        type="text"
+        id="name"
+        placeholder="Name"
+        required
+        class="modal__form-input"
+      />
+      <input
+        type="email"
+        id="email_id"
+        placeholder="email"
+        required
+        class="modal__form-input"
+      />
       <textarea
+        type="text"
+        id="message"
         placeholder="Write your comment here"
         class="modal__form-textarea"
+        required
       ></textarea>
       <button class="btn form__btn">send</button>
     </form>
