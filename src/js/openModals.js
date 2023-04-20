@@ -13,10 +13,10 @@ const closeModal = modal => {
 
 btns.forEach(btn => {
   btn.addEventListener('click', e => {
-    console.log(body.classList);
+    // console.log(body.classList);
     modals.forEach(modal => {
       if (modal.id === btn.dataset.modal) {
-        console.log(modal.id);
+        // console.log(modal.id);
         modal.classList.add('modal__visible');
         body.classList.add('stop__scroll');
       } else {

@@ -1,15 +1,7 @@
 const formBtn = document.querySelector('.form__btn');
-// const form = document.querySelector('.modal__form');
 
-// console.log(form);
-
-// form.addEventListener('click', e => {
-//   e.preventDefault();
-//   console.log(e.target.nodeName);
-// });
-
-const sendEmail = e => {
-  var templateParams = {
+const sendEmail = () => {
+  const templateParams = {
     from_name: document.getElementById('name').value,
     email_id: document.getElementById('email_id').value,
     message: document.getElementById('message').value,
@@ -23,6 +15,14 @@ const sendEmail = e => {
       console.log('FAILED...', error);
     }
   );
+
+  for (const key in templateParams) {
+    console.log(templateParams[key]);
+    templateParams[key] = '';
+    console.log(templateParams[key]);
+  }
+  templateParams.from_name = '';
+  console.log(templateParams);
 };
 
 formBtn.addEventListener('click', () => {
