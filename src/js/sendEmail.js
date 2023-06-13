@@ -1,4 +1,7 @@
 const formBtn = document.querySelector('.form__btn');
+const form = document.querySelector('.modal__form');
+
+console.dir(form);
 
 const sendEmail = () => {
   const templateParams = {
