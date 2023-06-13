@@ -18,16 +18,10 @@ const sendEmail = () => {
       console.log('FAILED...', error);
     }
   );
-
-  for (const key in templateParams) {
-    console.log(templateParams[key]);
-    templateParams[key] = '';
-    console.log(templateParams[key]);
-  }
-  templateParams.from_name = '';
   console.log(templateParams);
 };
 
 formBtn.addEventListener('click', () => {
   sendEmail();
+  form.reset();
 });
