@@ -1,9 +1,10 @@
+// @import 'sass/_variables';
+
 .modal {
   width: 100vw;
   height: 100vh;
   position: fixed;
-
-  padding: 30px;
+  padding: 10%;
   align-items: center;
   justify-content: center;
 
@@ -39,10 +40,6 @@
 
     max-height: 90vh;
     position: relative;
-
-    // franchise {
-    //   background-image: url('../images/franchise.jpeg');
-    // }
 
     & .modal__close {
       background-color: transparent;
@@ -142,23 +139,28 @@
   }
 }
 
-// ::placeholder {
-//   color: rgba(0, 0, 0, 0.273);
-// }
-
 @media screen and (max-width: 425px) {
   .product__wpapper img {
     max-width: 160px;
     transition-duration: var(--transitionDuration);
-    // max-height: inherit;
   }
 }
 
 .franchise {
-  width: 600px;
-  height: 314px;
-  background-image: url('../images/franchise.jpeg');
+  width: 240px;
+  height: 125px;
+  background-image: url('../images/franchise.jpeg'),
+    linear-gradient(#0000007d, #0000007d);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0px;
+  @media screen and (min-width: $tablet) {
+    width: 480px;
+    height: 252px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 720px;
+    height: 377px;
+  }
 }
