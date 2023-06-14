@@ -86,10 +86,26 @@
   }
 }
 
+// #product-1 .product__wpapper {
+//   background-color: var(--main-section-bg);
+// }
+// #product-2 .product__wpapper {
+//   background-color: rgba(240, 209, 165, 0.5);
+// }
+// #product-3 .product__wpapper {
+//   background-color: rgba(193, 226, 151, 0.5);
+// }
+
 .discr__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 250px;
+
+  & p {
+    overflow: auto;
+    line-height: 1;
+  }
 }
 
 .product__description {
