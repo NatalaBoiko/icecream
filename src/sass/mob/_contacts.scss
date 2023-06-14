@@ -81,12 +81,12 @@
 
   & a {
     color: var(--font-color-two);
+    margin-left: 8px;
     &:focus,
     &:hover {
       text-shadow: 0 0 3px #d4144300, 0px 0px 3px #fff, 0px 0px 5px #fff,
         0px 0px 7px #fff, 0 0 1px var(--font-color-three);
       color: var(--font-color-five);
-      margin-left: 5px;
       transform: scale(1.05);
     }
   }
