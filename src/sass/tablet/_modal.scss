@@ -1,7 +1,5 @@
 @media screen and (min-width: $tablet) {
   .modal__content {
-    // flex-direction: row;
-    // align-items: center;
     & .discr__wrapper {
       display: flex;
       flex-direction: column;
@@ -16,5 +14,17 @@
 
   .cow p {
     max-height: 250px;
+  }
+}
+// #buy-now .modal__content {
+//   width: 80%;
+// }
+#buy-now {
+  & .modal__content {
+    width: 80%;
+  }
+
+  & .modal__form {
+    width: 100%;
   }
 }
